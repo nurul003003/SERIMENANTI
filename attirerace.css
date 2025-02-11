@@ -1,0 +1,229 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ecdacd;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #FFEC9E;
+    color: #333;
+    z-index: 1000;
+}
+
+nav.top-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #a7601f;
+}
+
+nav.top-nav ul .logo img {
+    height: 60px;
+    width: 150px;
+  }
+
+nav.top-nav ul li {
+    margin: 0 10px;
+}
+
+nav.top-nav ul li a, .dropbtn {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    font-family: courier;
+    font-style: bold;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav.top-nav ul li a:hover, .dropdown:hover .dropbtn {
+    color: #ffffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7601f;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #a7611fda;
+}
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+  
+  h2, h3, h4 {
+    margin-bottom: 15px;
+  }
+  
+  .btn-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: courier;
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  .attire-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+ /* Attire and Race Section*/
+.attire-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.attire-item {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255, 212, 20);
+  box-shadow: 0 0 10px rgb(63, 42, 73);
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.attire-item img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Grid and List View Styling */
+.grid-view .attire-item {
+  width: 48%;
+}
+
+.list-view .attire-item {
+  width: 100%;
+}
+
+.grid-view .attire-item h3, 
+.grid-view .attire-item p,
+.list-view h3, 
+.list-view p {
+  font-family: courier;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.grid-view h3, .grid-view p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.list-view {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 212, 20);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.list-view p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #000000;
+  font-family: courier;
+}
+
+.list-view img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide sections by default */
+#race, #race-ethnicity, #cultural-significance, #race-header {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .attire-item {
+    flex: 1 100%;
+  }
+}
+
+footer{
+    background-color: #CD5700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h3, p {
+    font-family: courier
+}

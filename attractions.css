@@ -1,0 +1,172 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ecdacd;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #FFEC9E;
+    color: #333;
+    z-index: 1000;
+}
+
+nav.top-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #a7601f;
+}
+
+nav.top-nav ul .logo img {
+    height: 60px;
+    width: 150px;
+  }
+
+nav.top-nav ul li {
+    margin: 0 10px;
+}
+
+nav.top-nav ul li a, .dropbtn {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    font-family: courier;
+    font-style: bold;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav.top-nav ul li a:hover, .dropdown:hover .dropbtn {
+    color: #ffffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7601f;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #a7611fda;
+}
+
+footer{
+    background-color: #CD5700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    margin-left: 5%;
+        padding: 0 5px; 
+      }
+      .attractions-column {
+        width: 30%; 
+        height: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .attractions-column img {
+      width: 100%;
+      height: auto;
+      max-width: 500px; 
+      max-height: 300px; 
+      object-fit: cover; 
+      border-radius: 8px;
+    }
+    
+      
+      .attractions-text {
+        font-size: 16px;         
+        line-height: 1.6;        
+        color: #333;             
+        padding: 15px;
+        margin-top: 2%;        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        text-align: justify;
+        width: 100%;   
+        margin-bottom: 1%;   
+        font-family: courier;       
+      }
+      
+      .attractions-review-text {
+        font-size: 18px;         
+        font-weight: bold;
+        font-family: courier;       
+        
+      }
+      
+      .attractions-review-text .fa {
+        font-size: 20px;   
+        color: #e41717;    
+      }
+      
+      /* Filled (checked) star color */
+      .attractions-review-text .fa.checked {
+        color: rgb(250, 224, 73); 
+      }
+      
+      .attractions-column {
+        display: flex;
+        border-radius: 10px;    
+        background-color:rgba(255, 157, 0, 0.918);
+        padding: 20px; 
+        margin-bottom: 10px;     
+        align-items: center;    
+        width: 90%; 
+        height: 420px;  
+        margin-right:3%; 
+        margin-left: 5%;
+      }
+
+      @media (max-width: 768px) {
+        .attractions-column {
+          flex-direction: column;  
+          align-items: flex-start;
+        }
+}
+
+h3 {
+    font-size: 30px;
+    font-family: courier;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: courier;
+    font-style: italic;
+}

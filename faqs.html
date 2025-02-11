@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Seri Menanti</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li class="logo"><a href="students.html"><img src="images/logogroupwebsite-removebg-preview.png" alt="Logo"></a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">History</a>
+                    <div class="dropdown-content">
+                        <a href="story.html">Story</a>
+                        <a href="maps.html">Maps</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Local</a>
+                    <div class="dropdown-content">
+                        <a href="foodart.html">Food and Art</a>
+                        <a href="attirerace.html">Attire and Race</a>
+                    </div>
+                </li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="faq-container" style="margin-left: 6cm;">
+        <h1 style="margin-top: 1cm";>Frequently Asked Questions</h1>
+        <input type="text" id="searchBar" placeholder="Search FAQs..." onkeyup="searchFAQs()">
+        
+        <div class="faq-list">
+            <div class="faq-item">
+                <h2>What is Seri Menanti known for?</h2>
+                <p>Seri Menanti is famous for its royal heritage and the Seri Menanti Royal Palace, an iconic wooden palace built without nails.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Where is Seri Menanti located?</h2>
+                <p>It is located in Negeri Sembilan, Malaysia, and serves as the royal town of the state.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Can visitors enter the Seri Menanti Royal Palace?</h2>
+                <p>The old wooden palace has been converted into the Royal Museum and is open to visitors.</p>
+            </div>
+            <div class="faq-item">
+                <h2>What cultural practices are unique to Seri Menanti?</h2>
+                <p>The town follows Adat Perpatih, a matrilineal customary law practiced by the Minangkabau people of Negeri Sembilan.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Are there any annual events held in Seri Menanti?</h2>
+                <p>Yes, Seri Menanti hosts traditional cultural performances and royal ceremonies throughout the year.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        function searchFAQs() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                let question = item.getElementsByTagName('h2')[0].innerText.toLowerCase();
+                let answer = item.getElementsByTagName('p')[0].innerText.toLowerCase();
+                if (question.includes(input) || answer.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+<footer>
+    ©Copyright 2025. Seri Menanti. Negeri Sembilan. Malaysia. All Rights Reserved.
+</footer>
+</html>

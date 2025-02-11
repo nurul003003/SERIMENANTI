@@ -1,0 +1,135 @@
+!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="attirerace.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <header>
+            <nav class="top-nav">
+                <ul>
+                    <li class="logo"><a href="students.html"><img src="images/logogroupwebsite-removebg-preview.png" alt="Logo"></a></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn">History</a>
+                        <div class="dropdown-content">
+                            <a href="story.html">Story</a>
+                            <a href="maps.html">Maps</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Local</a>
+                        <div class="dropdown-content">
+                            <a href="foodart.html">Food and Art</a>
+                            <a href="attirerace.html">Attire and Race</a>
+                        </div>
+                    </li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn">More</a>
+                        <div class="dropdown-content">
+                            <a href="feedback.html">Feedback</a>
+                            <a href="faqs.html">FAQs</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="container">
+        <h2 style="margin-top: 2cm; font-family: courier;"><center>ATTIRE AND RACE </h2></center>
+    
+        <div class="btn-container">
+          <button class="btn active" onclick="gridView('attire')"><i class="fa fa-th-large"></i> Attire</button>
+          <button class="btn" onclick="listView('race')"><i class="fa fa-bars"></i> Race</button>
+        </div>
+    
+       
+         <div id="attire" class="grid-view">
+            <h3>ATTIRE SECTION</h3>
+            <div class="attire-row">
+            <div class="attire-item">
+             <h3><center> MEN'S TRADITIONAL CLOTHING</center></h3>
+              <p><strong>The Baju Melayu Cekak Musang</strong> is a traditional men’s shirt with a high standing collar, about 2.5 cm in height, encircling the neck. It features side seams (pesak), pleated edges (berkekek), three pockets, and five buttons at the collar symbolizing the Five Pillars of Islam.</p>
+            </div>
+            <div class="attire-item">
+              <img src="images/bajulelaki.jpg" alt="Baju Melayu Cekak Musang">
+            </div>
+          </div>
+    
+          <div class="attire-row">
+            <div class="attire-item">
+              <h3><center> WOMEN'S TRADITIONAL CLOTHING </center></h3>
+              <p>Traditional women’s attire includes the <strong>Baju Kurung Ibu Soko</strong>, <strong>Baju Kebaya Setengah Tiang</strong>, and <strong>Baju Kurung Pengantin Negeri Sembilan</strong>. These dresses feature unique details such as the Telok Belanga collar, intricate stitching, and batik sarongs. Some garments flare like an umbrella and incorporate traditional designs like pesak and berkekek.</p>
+            </div>
+            <div class="attire-item">
+              <img src="images/attire1.jpg" alt="Baju Kurung">
+            </div>
+          </div>
+    
+          <div class="attire-row" style="margin-bottom: 2cm">
+            <div class="attire-item">
+              <h3><center>BRIDE (PENGANTIN) TRADITIONAL CLOTHING</center></h3>
+              <p>The bride wears a <strong>Baju Kurung Teluk Belanga</strong> paired with a sarong made from songket fabric, known for its intricate floral weave. For noble Minangkabau women, velvet fabric with gold thread embroidery and sequins is used, complemented by a Sunting headpiece and a chest piece decorated with beads and sequins.</p>
+            </div>
+            <div class="attire-item">
+              <img src="images/baju pengantin.jpg" alt="Bride Traditional Clothing">
+            </div>
+          </div>
+        </div>
+        
+        <h3 id="race-header" style="display: none; text-align:center;">RACE SECTION</h3>
+        <div id="race" class="list-view" style="display: none;">
+          <div class="race-item">
+            <div class="race-description">
+           <h3><center>ADAT PERPATIH</center></h3>
+              <p>The Minangkabau people in Seri Menanti follow a matrilineal society where lineage and inheritance are passed through the mother. This is reflected in the <strong>Adat Perpatih</strong>, which emphasizes collective decision-making, consensus-building, and respect for elders. Women hold significant power in both family and social structures.</p>
+            </div>
+          </div>
+        </div>
+       
+      <div id="cultural-significance" class="race-item list-view">
+        <div class="race-description">
+          <h3><center> CULTURAL SIGNIFICANCE </center></h3>
+          <p>Seri Menanti, being home to the royal family of Negeri Sembilan, serves as a place where adat and race are often intertwined in the ceremonial life of the region. The royal ceremonies and rituals are deeply embedded with adat practices, and these are reflective of both Minangkabau traditions and the multi-ethnic makeup of Malaysia.</p>
+        </div>
+      </div>
+      <div id="race-ethnicity" class="race-item list-view" style="display:none; margin-bottom: 2cm">
+        <div class="race-description">
+          <h3><center>RACE AND ETHNICITY </center></h3>
+          <p>While the Minangkabau people are the dominant ethnic group in Negeri Sembilan, the state also hosts a diverse mix of Malay, Chinese, Indian, and other ethnic communities, each contributing to the state’s social fabric. The interaction between these groups is influenced by Malaysia’s historical development and the blending of various cultures. In Seri Menanti, the influence of the Malay race is quite strong, particularly within the royal institutions. However, ethnic integration is part of the broader national identity, with different races playing vital roles in business, politics, and daily life. The Malays, Chinese, and Indians, for instance, generally coexist harmoniously, although there are distinct cultural practices and customs associated with each group.</p>
+        </div>
+      </div>
+    </div>
+      <footer>
+        ©Copyright 2025. Seri Menanti. Negeri Sembilan. Malaysia. All Rights Reserved.
+    </footer>
+      <script>
+        // Switch to grid view for attire section
+    function gridView(section) {
+      document.getElementById('attire').style.display = 'block';
+      document.getElementById('race').style.display = 'none';
+      document.getElementById('race-ethnicity').style.display = 'none';
+      document.getElementById('cultural-significance').style.display = 'none';
+      document.getElementById('race-header').style.display = 'none';  // Hide the Race Section header
+      document.querySelector('.btn.active').classList.remove('active');
+      document.querySelector('.btn:nth-child(1)').classList.add('active');
+    }
+    
+    // Switch to list view for race section
+    function listView(section) {
+      document.getElementById('attire').style.display = 'none';
+      document.getElementById('race').style.display = 'block';
+      document.getElementById('race-ethnicity').style.display = 'block';
+      document.getElementById('cultural-significance').style.display = 'block';
+      document.getElementById('race-header').style.display = 'block';  // Show the Race Section header
+      document.querySelector('.btn.active').classList.remove('active');
+      document.querySelector('.btn:nth-child(2)').classList.add('active');
+    }
+      </script>
+    </body>
+    </html>

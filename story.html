@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seri Menanti</title>
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li class="logo"><a href="students.html"><img src="images/logogroupwebsite-removebg-preview.png" alt="Logo"></a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">History</a>
+                    <div class="dropdown-content">
+                        <a href="story.html">Story</a>
+                        <a href="maps.html">Maps</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Local</a>
+                    <div class="dropdown-content">
+                        <a href="foodart.html">Food and Art</a>
+                        <a href="attirerace.html">Attire and Race</a>
+                    </div>
+                </li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Discover Story About Seri Menanti and Its Community</h1>
+    <h2>Seri Menanti is a captivating destination that offers a unique blend of history, nature, culture. Located in Negeri Sembilan, it is known for its features. Whether you are looking for specific activity or experience or simply want to immerse yourself in knowing about Minangkabau culture, Seri Menanti promises an unforgettable experience.</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'MinangkabauMigration')" id="defaultOpen">Minangkabau Migration</button>
+        <button class="tablinks" onclick="openCity(event, 'NameOrigin')">Name Origin</button>
+        <button class="tablinks" onclick="openCity(event, 'EarlyLeadership')">Early Leadership</button>
+        <button class="tablinks" onclick="openCity(event, 'IstanaLama')">Istana Lama</button>
+        <button class="tablinks" onclick="openCity(event, 'RoyalMausoleum')">Royal Mausoleum</button>
+        <button class="tablinks" onclick="openCity(event, 'PancaPersada')">Panca Persada</button>
+        <button class="tablinks" onclick="openCity(event, 'IstanaBesar')">Istana Besar</button>
+      </div>
+      
+      <div id="MinangkabauMigration" class="tabcontent">
+        <h3 style="background-color: #ff910083;">Minangkabau Migration</h3>
+        <p>Seri Menanti's history starts around the 15th century when the Minangkabau people migrated to the area from Rembau due to the practice of merantau (migration).</p>
+      </div>
+      
+      <div id="NameOrigin" class="tabcontent">
+        <h3 style=" background-color: #e7830091;">Name Origin</h3>
+        <p>The name Seri Menanti is believed to have originated from "Padi Menanti" (awaiting paddy) as explorers reportedly found three stalks of fresh green paddy. Over time, "Padi Menanti" evolved into "Seri Menanti".</p> 
+      </div>
+      
+      <div id="EarlyLeadership" class="tabcontent">
+        <h3 style=" background-color: #c9730291;">Early Leadership</h3>
+        <p>In 1773, Raja Melewar, who was proclaimed the first Yamtuan Besar (ruler), moved his palace to Seri Menanti, establishing it as the royal capital of Negeri Sembilan.</p>
+      </div>
+      
+      <div id="IstanaLama" class="tabcontent">
+        <h3 style=" background-color: #a05b018c;">Istana Lama</h3>
+        <p>One of the significant landmarks in Seri Menanti is the Istana Lama (Old Palace), a unique four-story wooden palace built without nails, which served as the official residence of the Yang di-Pertuan Besar from 1908 to 1933. Now, it functions as the Royal Museum.</p>
+      </div>
+
+      <div id="RoyalMausoleum" class="tabcontent">
+        <h3 style=" background-color: #8b4f0091;">Royal Mausoleum</h3>
+        <p>The Seri Menanti Royal Mausoleum is where the royal family members of Negeri Sembilan are laid to rest.</p>
+      </div>
+
+      <div id="PancaPersada" class="tabcontent">
+        <h3 style=" background-color: #6d3e0086;">Panca Persada</h3>
+        <p>This ceremonial site is used for performing traditional royal installations and other significant rites.</p>
+      </div>
+
+      <div id="IstanaBesar" class="tabcontent">
+        <h3 style=" background-color: #502d0083;">Istana Besar</h3>
+        <p>The current residence of the Yang di-Pertuan Besar is the Grand Palace or Istana Besar, completed in 1932.</p>
+      </div>
+
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      document.getElementById("defaultOpen").click();
+      </script>
+
+            
+<footer>
+    ©Copyright 2025. Seri Menanti. Negeri Sembilan. Malaysia. All Rights Reserved.
+</footer>
+</body>
+</html>
